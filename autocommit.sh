@@ -11,7 +11,7 @@
 ### the listed folders, just keep that line commented out.        ###
 #####################################################################
 ### Path to your config folder you want to backup
-config_folder=~/printer_data/config
+config_folder=~/printer_1_data/config
 
 # NOTE: The above should work for just about everyone, but a somewhat
 # recent update to moonraker changed paths, etc. You can run the 
@@ -34,7 +34,7 @@ mainsail_folder=~/mainsail
 ### By default that is 'main'
 branch=main
 
-db_file=~/printer_data/database/moonraker-sql.db
+db_file=~/printer_1_data/database/moonraker-sql.db
 
 #####################################################################
 #####################################################################
@@ -70,7 +70,7 @@ grab_version(){
 
 if [ -f $db_file ]; then
    echo "sqlite based history database found! Copying..."
-   cp ~/printer_data/database/moonraker-sql.db ~/printer_data/config/
+   cp ~/printer_1_data/database/moonraker-sql.db ~/printer_1_data/config/
 else
    echo "sqlite based history database not found"
 fi
